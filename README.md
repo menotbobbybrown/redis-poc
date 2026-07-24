@@ -1,8 +1,10 @@
 # Redis Authenticated RCE (stream NACK double free + TDigest heap overflow)
 
 Non-destructive RCE exploits for **Redis 6.2.22, 7.4.9, 8.6.4** via the
-stream consumer-group shared-NACK double free (CVE-2026-25589 incomplete fix family), and for **Redis 8.8.0** via a
-newly found TDigest heap-overflow in the bundled RedisBloom module. 
+stream consumer-group shared-NACK double free (a patch bypass of
+CVE-2026-25243), **8.8.0** via a TDigest heap-overflow in bundled
+RedisBloom, and **8.8.1** via a TopK wild free (a patch bypass of
+CVE-2026-25589).
 
 ## Files
 
