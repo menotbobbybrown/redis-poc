@@ -1,4 +1,4 @@
-# Redis Authenticated RCE (stream NACK double free + TDigest heap overflow)
+# Redis Authenticated RCE (stream NACK double free, TDigest & TopK module bugs)
 
 Non-destructive RCE exploits for **Redis 6.2.22, 7.4.9, 8.6.4** via the
 stream consumer-group shared-NACK double free (a patch bypass of
